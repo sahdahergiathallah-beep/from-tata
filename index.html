@@ -49,11 +49,24 @@ button{color:#fff;background:#211238dc;border:1px solid #e8b4ff80;border-radius:
 </main>
 <div id="letter"><div class="note"><h2>Untuk Caca 💗</h2><p>Kalau setiap bintang punya cerita, aku ingin semua ceritaku berakhir di kamu. Semoga hari-harimu selalu dipenuhi hal baik, tawa, dan alasan untuk tersenyum. Kamu spesial, lebih dari yang bisa dijelaskan kata-kata. ✨</p><button id="close">Kembali ke galaksi ✨</button></div></div>
 <script>
+```javascript
 const photos = [
-'assets/foto-01.jpg','assets/foto-02.jpg','assets/foto-03.jpg','assets/foto-04.jpg',
-'assets/foto-05.jpg','assets/foto-06.jpg','assets/foto-07.jpg','assets/foto-08.jpg',
-'assets/foto-09.jpg','assets/foto-10.jpg','assets/foto-11.jpg','assets/foto-12.jpg',
-'assets/foto-13.jpg','assets/foto-14.jpg'];
+  'foto-01.jpg',
+  'foto-02.jpg',
+  'foto-03.jpg',
+  'foto-04.jpg',
+  'foto-05.jpg',
+  'foto-06.jpg',
+  'foto-07.jpg',
+  'foto-08.jpg',
+  'foto-09.jpg',
+  'foto-10.jpg',
+  'foto-11.jpg',
+  'foto-12.jpg',
+  'foto-13.jpg',
+  'foto-14.jpg'
+];
+```
 const orbits=[document.getElementById('orbitA'),document.getElementById('orbitB'),document.getElementById('orbitC')];
 photos.forEach((src,i)=>{
  const lane=i%3, node=document.createElement('img');node.className='photo';node.src=src;node.alt='Kenangan Caca '+(i+1);
